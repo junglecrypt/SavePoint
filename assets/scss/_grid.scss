@@ -9,6 +9,8 @@ https://github.com/learningtheweb/SavePoint
 
 Section: $Grid
 Uses a modified https://simplegrid.io/
+
+Hat tip: https://css-tricks.com/dont-overthink-flexbox-grids/
 ----------------------------------------------*/
 
 // utility
@@ -37,33 +39,33 @@ Uses a modified https://simplegrid.io/
 
 // grid
 
-$width: 100%;
-$gutter: 4%;
+$width: 98%;
+$gutter: 2%;
 $breakpoint-small: 33.75em; // 540px
 $breakpoint-med: 45em; // 720px
 $breakpoint-large: 60em; // 960px
 
 .container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 
-  @media only screen and (min-width: $breakpoint-small) {
-    width: 80%;
-  }
+    @media only screen and (min-width: $breakpoint-small) {
+        width: 80%;
+    }
 
-  @media only screen and (min-width: $breakpoint-large) {
-    width: 75%;
-    max-width: 60rem;
-  }
+    @media only screen and (min-width: $breakpoint-large) {
+        width: 75%;
+        max-width: 60rem;
+    }
 }
 
 .row {
-  width: 100%;
+    width: 100%;
 }
 
 .row [class^="col"] {
-  min-height: 0.125rem;
+    min-height: 0.125rem;
 }
 
 .col-1,
@@ -78,7 +80,7 @@ $breakpoint-large: 60em; // 960px
 .col-10,
 .col-11,
 .col-12 {
-  width: $width;
+    width: $width;
 }
 
 .col-1-sm { width:($width / 12) - ($gutter * 11 / 12); }
@@ -97,22 +99,22 @@ $breakpoint-large: 60em; // 960px
 @media only screen and (min-width: $breakpoint-med) {
     .row {
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .col-1 { width:($width / 12) }
-    .col-2 { width: ($width / 6) }
-    .col-3 { width: ($width / 4) }
-    .col-4 { width: ($width / 3) }
-    .col-5 { width: ($width / (12 / 5)) }
-    .col-6 { width: ($width / 2) }
-    .col-7 { width: ($width / (12 / 7)) }
-    .col-8 { width: ($width / (12 / 8)) }
-    .col-9 { width: ($width / (12 / 9)) }
-    .col-10 { width: ($width / (12 / 10)) }
-    .col-11 { width: ($width / (12 / 11)) }
+    .col-1 { width:($width / 12) - ($gutter * 11 / 12); }
+    .col-2 { width: ($width / 6) - ($gutter * 10 / 12); }
+    .col-3 { width: ($width / 4) - ($gutter * 9 / 12); }
+    .col-4 { width: ($width / 3) - ($gutter * 8 / 12); }
+    .col-5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+    .col-6 { width: ($width / 2) - ($gutter * 6 / 12); }
+    .col-7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+    .col-8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+    .col-9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+    .col-10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+    .col-11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
     .col-12 { width: $width; }
 
-  .hidden-sm {
-    display: block;
-  }
+    .hidden-sm {
+        display: block;
+    }
 }
