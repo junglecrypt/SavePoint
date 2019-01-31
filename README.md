@@ -23,7 +23,7 @@ If you're one for reading theory, [Wikipedia is the place to go][3] to read more
 ## Features
 
 - Baked in [normalize.css][4] to straighten out all those browser inconsistencies. We're using this instead of a CSS reset, but the results are similar.
-- [Simple Grid][2] is provided as an excellent example of a grid, but it's easy to swap out.
+- A modified version of [Simple Grid][2] is provided as an excellent example of a grid, but it's easy to swap out.
 - A simple and fully commented SCSS structure to help you understand how it all works.
 - A simple and fully commented [PHP include][5] structure with example pages to help you understand how PHP includes work. This knowledge is useful to learn as it can easily be transferred to popular CMSs like [WordPress][6].
 
