@@ -37,6 +37,19 @@ If you're one for reading theory, [Wikipedia is the place to go][3] to read more
 
 - We recommend you spend a bit of time learning how git works. It isn't required to use SavePoint&trade;, but you'll be expected to know it when you get a job. Have a read through [GitHub's guide about their workflow][16], and [this excellent resource][17] from @blackfalcon.
 
+## Structure
+
+We like keeping things neat, so you'll find everything you need in the **assets** folder.
+
+```
+index.php
+- assets
+    - img (your folder for images)
+    - inc (where the PHP includes are for headers, footers and sidebars)
+    - scss (your core SCSS - the bit you edit)
+    - css (where your SCSS will get compiled to - don't mess with this folder)
+```
+
 ## Roadmap
 
 1. Add in some JavaScript magic so you can learn some JS basics.
